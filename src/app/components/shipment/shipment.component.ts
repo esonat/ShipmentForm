@@ -36,11 +36,6 @@ export class ShipmentComponent implements OnInit {
     });
   }
 
-
-  // public errorHandling=(control:string,error:string)=>{
-  //     return this.myForm.controls[control].hasError(error);
-  // }
-
   get f(){ return this.shipmentForm.controls;}
 
   get phonenumber(){
@@ -54,6 +49,6 @@ export class ShipmentComponent implements OnInit {
       return;
     }
 
-    alert('SUCCESS!! \n\n'+JSON.stringify(this.shipmentForm.value,null,4));
+    alert(JSON.stringify(this.shipmentForm.value,null,4));
   }
 }
